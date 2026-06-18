@@ -1,5 +1,7 @@
 # Mobile Weather App
 
+![Interface de l'application](./assets/wheater-app.jpg)
+
 Une application mobile météo construite avec Expo et React Native. Elle permet de rechercher la météo d'une ville, d'afficher un aperçu sur 5 jours et de naviguer entre les jours avec un ScrollView horizontal.
 
 ## Fonctionnalités
