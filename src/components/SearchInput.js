@@ -30,8 +30,8 @@ const SearchInput = ({ onSubmit, initialValue, initialColor }) => {
 
 const styles = StyleSheet.create({
   textInput: {
-    backgroundColor: 'rgba(255, 255, 255, 0.2)', 
-    color: '#FFF',
+    backgroundColor: 'rgb(0, 0, 0)', 
+    color: '#f8f8f8',
     alignSelf: 'center',
     height: 50, 
     marginTop: 20,

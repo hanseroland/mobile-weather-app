@@ -28,6 +28,7 @@ const HomeScreen = () => {
   const loadWeather = async (city) => {
     setLoading(true);
     const data = await fetchWeatherByCity(city);
+    console.log(data)
     if (data) {
       setWeatherData(data);
       setLocation(data.location);
@@ -114,7 +115,7 @@ const HomeScreen = () => {
       <View style={styles.appHeader}>
         <SearchInput
           initialValue="Rechercher une ville"
-          initialColor="rgba(255,255,255,0.7)"
+          initialColor="rgba(255, 255, 255, 0.7)"
           onSubmit={loadWeather}
         />
       </View>
@@ -145,17 +146,26 @@ const InfoColumn = ({ label, value, unit, color }) => (
 );
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#000' },
+  container: { 
+     flex: 1,
+     backgroundColor: '#000',
+    
+    },
   centered: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#000' },
   imageBackground: { flex: 1 },
-  overlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.3)', padding: 20 },
+  overlay: {
+     flex: 1, 
+     backgroundColor: 'rgba(0,0,0,0.3)', 
+     padding: 20,
+     borderRadius: 20
+    },
   appHeader: {
     position: 'absolute',
     top: 50,
     width: '100%',
     alignItems: 'center',
   },
-  topInfoWrapper: { flex: 1, marginTop: 120, justifyContent: 'space-between' },
+  topInfoWrapper: { flex: 1,margin:5, marginTop: 120, justifyContent: 'space-between' },
   city: { color: '#fff', fontSize: 35, fontWeight: 'bold' },
   time: { color: '#fff', fontSize: 16, opacity: 0.8 },
   temperature: { color: '#fff', fontSize: 90, fontWeight: '200' },
@@ -164,12 +174,12 @@ const styles = StyleSheet.create({
   conditionWrapper: { flexDirection: 'row', alignItems: 'center' },
   weatherType: { color: '#fff', fontSize: 22, marginLeft: 10 },
   divider: { borderBottomColor: 'rgba(255,255,255,0.3)', borderBottomWidth: 1, marginVertical: 20 },
-  bottomInfoWrapper: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 30 },
+  bottomInfoWrapper: { flexDirection: 'row',margin:5, justifyContent: 'space-between', marginBottom: 30 },
   infoLabel: { color: '#fff', fontSize: 12, opacity: 0.7, fontWeight: 'bold' },
   infoValue: { color: '#fff', fontSize: 24, fontWeight: 'bold', marginVertical: 4 },
   infoBarBackground: { width: 45, height: 4, backgroundColor: 'rgba(255,255,255,0.2)', marginTop: 5 },
   infoBarInner: { height: 4 },
-  indicatorWrapper: { position: 'absolute', top: 160, left: 20, flexDirection: 'row' },
+  indicatorWrapper: { position: 'absolute', top: 160, left: 20, flexDirection: 'row', margin:5 },
   normalDot: { height: 5, borderRadius: 4, marginHorizontal: 4, backgroundColor: '#fff' },
 });
 

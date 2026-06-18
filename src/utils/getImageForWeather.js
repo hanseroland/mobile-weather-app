@@ -1,11 +1,11 @@
 const images = {
-  'Clear': require('../../assets/sunny.jpg'),
-  'Sunny': require('../../assets/sunny.jpg'),
-  'Partly cloudy': require('../../assets/light-cloud.png'),
-  'Cloudy': require('../../assets/cloudy.jpg'),
+  'Dégagé': require('../../assets/sunny.jpg'),
+  'Ensoleillé': require('../../assets/sunny.jpg'),
+  'Partiellement nuageux': require('../../assets/light-cloud.png'),
+  'Nuageux': require('../../assets/cloudy.jpg'),
   'Overcast': require('../../assets/cloudy.jpg'),
-  'Patchy rain possible': require('../../assets/rain.jpg'),
-  'Light rain': require('../../assets/rain.jpg'),
+  'Pluies éparses à proximité': require('../../assets/rain.jpg'),
+  'Pluie modérée': require('../../assets/rain.jpg'),
   'Heavy rain': require('../../assets/heavy-rain.png'),
   'Thundery outbreaks possible': require('../../assets/thunder.png'),
   
